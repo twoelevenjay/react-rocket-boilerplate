@@ -1,7 +1,7 @@
 react-rocket
 ============
 
-A boilerplate using ReactJS (along with React Router and RefluxJS), SASS, Gulp, and Browserify that also utilizes Gulp best practices from [this resource](https://github.com/greypants/gulp-starter).
+A boilerplate using ReactJS (along with React Router and Flux), SASS, Gulp, and Browserify that also utilizes Gulp best practices from [this resource](https://github.com/greypants/gulp-starter).
 
 ---
 
@@ -23,7 +23,7 @@ This boilerplate uses the latest versions of the following libraries:
 
 - [ReactJS](https://github.com/facebook/react)
 - [React Router](https://github.com/rackt/react-router)
-- [RefluxJS](https://github.com/spoike/refluxjs)
+- [Flux](https://github.com/facebook/flux)
 - [SASS](http://sass-lang.com/)
 - [Gulp](http://gulpjs.com/)
 - [Browserify](http://browserify.org/)
@@ -76,13 +76,13 @@ Each module you add to your project should be placed in the appropriate director
 
 ---
 
-### RefluxJS
+### Flux
 
-RefluxJS is a "simple library for unidirectional dataflow architecture inspired by ReactJS Flux."
+An application architecture for React utilizing a unidirectional data flow.
 
 "The pattern is composed of actions and data stores, where actions initiate new data to pass through data stores before coming back to the view components again. If a view component has an event that needs to make a change in the application's data stores, they need to do so by signalling to the stores through the actions available."
 
-The RefluxJS files are also all locationed within `/app/js`, structured in the following manner:
+The Flux files are also all locationed within `/app/js`, structured in the following manner:
 
 ```
 /actions
